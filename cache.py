@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title('Streamlit con cache')
 
-DATA_URL='dataset.csv'
+DATA_URL='https://raw.githubusercontent.com/MariaJosePerezCoop/streamlit_labs/master/dataset.csv?token=GHSAT0AAAAAAB2X2DKEPEHG5AJVD6E7D3LMY3NHMVA'
 
 @st.cache
 def load_data(nrows):
@@ -12,7 +12,7 @@ def load_data(nrows):
     return data
 
 data_load_state=st.text('Loading data...')
-data=load_data(10)
+data=load_data(4)
 data_load_state.text('Done...')
 
 st.dataframe(data)
