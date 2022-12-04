@@ -2,6 +2,12 @@ import pandas as pd
 import streamlit as st
 import numpy as np
 
+st.set_page_config(page_title="Uber",
+                   page_icon=":car:",layout='wide', initial_sidebar_state='expanded')
+
+st.title('Rutas Uber')
+
+st.write('_Viajes de Uber en la ciudad de Nueva York con filtros por hora_')
 
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
