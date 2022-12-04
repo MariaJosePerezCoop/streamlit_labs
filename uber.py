@@ -24,7 +24,8 @@ def load_data(nrows):
 data=load_data(100)
 st.dataframe(data)
 
-hour_to_filter = st.slider('hour', 0, 23, 15)
+
+hour_to_filter = st.sidebar.slider('Selecciona la hora', 0, 23, 15)
 filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 
 st.map(filtered_data)
