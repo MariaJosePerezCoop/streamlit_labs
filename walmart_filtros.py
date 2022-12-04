@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+
 
 st.set_page_config(page_title="Walmart",
                    page_icon=":shopping_trolley:",layout='wide', initial_sidebar_state='expanded')
